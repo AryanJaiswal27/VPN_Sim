@@ -490,3 +490,5 @@ document.getElementById("themeToggle").onclick = () => {
         document.getElementById("themeToggle").innerText = "🌙 Dark Mode";
     }
 };
+
+// CN - Project
