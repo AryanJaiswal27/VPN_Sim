@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VPN Globe Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ui">
+
+    
+    <div class="panel">
+    <button id="exportBtn">💾 Export</button>
+    <button id="importBtn">📂 Import</button>
+    <input type="file" id="fileInput" hidden />
+</div>
+
+    <div class="panel">
+        <button id="modeToggle" class="primary">Edit Mode</button>
+        <button id="toggleRotation">⟳ Rotation</button>
+        <button id="toggleVPN">🔐 VPN</button>
+    </div>
+
+    <div class="panel">
+        <span class="label">Place Node:</span>
+        <button class="node-btn" data-type="user">👤 User</button>
+        <button class="node-btn" data-type="vpn">🛡 VPN</button>
+        <button class="node-btn" data-type="server">🖥 Server</button>
+    </div>
+
+    
+    <button id="themeToggle">🌙 Dark Mode</button>
+
+</div>
+
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- IMPORTANT: module -->
+<script type="module" src="main.js"></script>
+
+</body>
+</html>

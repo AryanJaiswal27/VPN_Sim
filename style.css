@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: black;
+}
+
+/* UI Container */
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+/* Panels */
+.panel {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Labels */
+.label {
+    color: #ccc;
+    font-size: 12px;
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Primary button */
+.primary {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: black;
+    font-weight: bold;
+}
+
+/* Active mode button */
+.node-btn.active {
+    background: linear-gradient(135deg, #00ffcc, #00ccff);
+    color: black;
+    font-weight: bold;
+}
+
+/* Disabled look */
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
+/* Light (default) */
+body.light {
+    background: black;
+}
+
+/* Dark mode */
+body.dark {
+    background: #050505;
+}
+
+/* UI tweaks for dark mode */
+body.dark .panel {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+body.dark button {
+    background: rgba(255,255,255,0.08);
+    color: #ddd;
+}
+
+body.dark button:hover {
+    background: rgba(255,255,255,0.15);
+}
